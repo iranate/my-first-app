@@ -1,0 +1,14 @@
+name: TypeScript Check
+on: [push] # This tells GitHub to run whenever you push code
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4 # Gets your code
+      - uses: actions/setup-node@v4 # Sets up Node.js
+        with:
+          node-version: '20'
+      - run: npm install -g typescript # Installs the translator
+      - run: tsc tasks.ts # Translates your code
+      - run: node tasks.js # Runs your code
