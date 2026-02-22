@@ -1,5 +1,5 @@
 // 1. Our list of tasks (The Array)
-let todoList: string[] = ["Clean Room", "Practice Coding", "Feed Cat"];
+let todoList: string[] = ["Clean Room", "Practice Coding", "Feed Cat" 123];
 
 // 2. A function to show our tasks
 function showTasks(tasks: string[]) {
